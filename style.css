@@ -6,3 +6,7 @@ h1{font-size:clamp(58px,6.1vw,94px);letter-spacing:-.065em}h2{letter-spacing:-.0
 .portrait{position:relative;margin:32px 0 0;width:min(100%,330px);isolation:isolate}.portrait::before{content:"";position:absolute;inset:7px -10px -7px 10px;background:var(--blue);border-radius:48% 48% 12px 12px;z-index:-1;transform:rotate(3deg)}.portrait img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:48% 48% 12px 12px}.portrait-spark{position:absolute;right:-20px;bottom:10px;color:var(--blue);font-size:80px;line-height:1;text-shadow:2px 2px 0 var(--lime)}.about .name-tag{margin-top:23px}.about-copy{align-self:center}
 @media(max-width:650px){h1{font-size:clamp(47px,13vw,61px);letter-spacing:-.065em}.portrait{width:min(78%,300px)}.ribbon .ribbon-track{animation-duration:25s}}
 @media(prefers-reduced-motion:reduce){.ribbon .ribbon-track{animation:none;transform:none}}
+
+/* Compact author section. */
+.about.section{padding-top:52px;padding-bottom:52px}.about h2{font-size:clamp(54px,5.2vw,74px)}.about .portrait{width:210px;margin-top:22px}.about .portrait-spark{font-size:57px;right:-16px}.about .name-tag{margin-top:20px}
+@media(max-width:650px){.about.section{padding-top:38px;padding-bottom:38px}.about h2{font-size:54px}.about .portrait{width:190px}.about-copy{margin-top:30px}}
