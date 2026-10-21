@@ -1,6 +1,6 @@
 const projects=window.PORTFOLIO_PROJECTS;
 const root=document.getElementById('projects');
-const src=id=>`assets/${String(id).padStart(2,'0')}.webp`;
+const src=id=>`assets/${String(id).padStart(2,'0')}.webp${id===11?'?v=2':''}`;
 const viewer=document.getElementById('viewer');
 let current={project:0,variant:0,index:0};
 function showImage(){
