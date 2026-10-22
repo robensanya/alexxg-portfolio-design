@@ -32,3 +32,12 @@ h1{font-size:clamp(58px,6.1vw,94px);letter-spacing:-.065em}h2{letter-spacing:-.0
 /* Offset the portrait upward for an asymmetric desktop composition. */
 @media(min-width:1251px){.about-title>.portrait{transform:translate(-32px,-110px)}}
 @media(min-width:1001px) and (max-width:1250px){.about-title>.portrait{transform:translate(-12px,-65px)}}
+
+/* Transparent portrait anchored to the bottom of the lime section. */
+.about.section{position:relative;overflow:hidden}
+.about>.portrait{position:absolute;left:27%;bottom:0;width:24%;max-width:360px;margin:0;transform:none;z-index:0}
+.about>.portrait img{display:block;width:100%;height:auto;aspect-ratio:1;border-radius:0;object-fit:contain}
+.about>.portrait::before{display:none}
+.about-title,.about-copy{position:relative;z-index:1}
+@media(min-width:1001px) and (max-width:1250px){.about>.portrait{left:26%;width:25%}}
+@media(max-width:1000px){.about.section{padding-bottom:0}.about>.portrait{position:relative;left:auto;bottom:auto;width:280px;max-width:85%;grid-column:1/-1;justify-self:center;order:3;margin:0;transform:none}.about-title{grid-template-columns:1fr}.about-title>.name-tag{grid-row:3}}
