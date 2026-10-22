@@ -28,3 +28,7 @@ h1{font-size:clamp(58px,6.1vw,94px);letter-spacing:-.065em}h2{letter-spacing:-.0
 .about-title>.portrait img{border-radius:22px}
 .about-title>.portrait::before{inset:6px -6px -6px 6px;border-radius:22px;transform:none}
 @media(max-width:650px){.about-title>.portrait{transform:translateX(-6px)}.about-title>.portrait img,.about-title>.portrait::before{border-radius:16px}}
+
+/* Offset the portrait upward for an asymmetric desktop composition. */
+@media(min-width:1251px){.about-title>.portrait{transform:translate(-32px,-110px)}}
+@media(min-width:1001px) and (max-width:1250px){.about-title>.portrait{transform:translate(-12px,-65px)}}
