@@ -22,3 +22,9 @@ h1{font-size:clamp(58px,6.1vw,94px);letter-spacing:-.065em}h2{letter-spacing:-.0
 @media(max-width:1000px){.about{grid-template-columns:1fr;gap:32px}.about-title{grid-template-columns:minmax(0,1fr) 210px;max-width:620px;width:100%}.about-title>h2{font-size:64px}.about-copy{margin-top:0}}
 @media(max-width:650px){.about{display:grid}.about-title{grid-template-columns:minmax(0,1fr) 135px;column-gap:18px;row-gap:14px}.about-title>h2{font-size:clamp(39px,9vw,54px)}.about-title>.portrait{width:100%;margin:0}.about-title>.name-tag{font-size:11px}.about-title .portrait-spark{font-size:39px;right:-10px}}
 @media(max-width:360px){.about-title{grid-template-columns:minmax(0,1fr) 110px;column-gap:12px}.about-title>h2{font-size:37px}}
+
+/* Softer rectangular portrait, closer to the introduction. */
+.about-title>.portrait{transform:translateX(-12px)}
+.about-title>.portrait img{border-radius:22px}
+.about-title>.portrait::before{inset:6px -6px -6px 6px;border-radius:22px;transform:none}
+@media(max-width:650px){.about-title>.portrait{transform:translateX(-6px)}.about-title>.portrait img,.about-title>.portrait::before{border-radius:16px}}
